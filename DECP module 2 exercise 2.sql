@@ -105,10 +105,13 @@ BEGIN
 END //
 DELIMITER ;
 
-CALL cancel_order(1);
+START TRANSACTION;
+CALL cancel_order(3);
+ROLLBACK;
 
 -- works.
--- order 1 was deleted.
+-- orders 1 and 2 were delete, use the start transaction and rollback to 
+-- keep the db in its original state.
 
 
 
