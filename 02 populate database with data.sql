@@ -1,3 +1,5 @@
+USE GD_little_lemon_db;
+
 INSERT INTO customers (first_name, last_name, phone, email) 
 VALUES 
 	('Logan', 'Allen', '9647184668', 'logan.allen@mail.com'),

@@ -5,10 +5,11 @@ from datetime import datetime, timedelta
 # Database connection
 db = mysql.connector.connect(
     host="localhost",
-    user="root",
-    password="MS@gabriel7.gabriel7",
-    database="little_lemon_db"
+    user="coursera_user",
+    password="coursera_user",
+    database="GD_little_lemon_db"
 )
+
 cursor = db.cursor()
 
 
